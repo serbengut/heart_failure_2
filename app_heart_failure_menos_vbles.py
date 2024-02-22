@@ -45,7 +45,7 @@ chest_pain_type = st.selectbox('Chest Pain Type', ['ATA', 'NAP', 'ASY','TA'])
 cholesterol = st.slider('Cholesterol level', 70, 800)
 
 ### vble 4:
-exercise_angina = st.selectbox('Exercise Angina', ['Y', 'N'])
+#exercise_angina = st.selectbox('Exercise Angina', ['Y', 'N'])
 
 ### vble 5:
 #fasting_bs = st.selectbox('Fasting blood sugar [1: if FastingBS > 120 mg/dl, 0: otherwise]', [1, 0])
@@ -72,7 +72,6 @@ st_slope = st.selectbox('Slope of the peak exercise:', ['Up', 'Flat','Down'])
 
 registro = pd.DataFrame({'chest_pain_type':chest_pain_type,                                              
                          'cholesterol':cholesterol,
-                         'exercise_angina':exercise_angina,
                          'max_hr':max_hr,
                          'oldpeak':oldpeak,
                          'st_slope':st_slope
