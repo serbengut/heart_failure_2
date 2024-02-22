@@ -64,7 +64,7 @@ oldpeak = st.number_input(label='OldPeak', min_value=-2.0, max_value=6.0,step=0.
 #resting_ecg = st.selectbox('Resting ECG', ['Normal', 'ST','LVH'])
 
 ### vble 10:
-sex = st.selectbox('Sex', ['M', 'F'])
+#sex = st.selectbox('Sex', ['M', 'F'])
 
 ### vble 11:
 st_slope = st.selectbox('Slope of the peak exercise:', ['Up', 'Flat','Down']) 
@@ -75,7 +75,6 @@ registro = pd.DataFrame({'chest_pain_type':chest_pain_type,
                          'exercise_angina':exercise_angina,
                          'max_hr':max_hr,
                          'oldpeak':oldpeak,
-                         'sex':sex,
                          'st_slope':st_slope
                          }
                         ,index=[0])
