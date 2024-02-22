@@ -38,10 +38,9 @@ def ejecutar_modelo(df):
         pipe_ejecucion = cloudpickle.load(file)
 
     scoring = pipe_ejecucion.predict_proba(df)[:,1]
-    #scoring = pipe_ejecucion.predict_proba(df)[:,1].astype('object')
 
     return 'El porcentaje de tener fallo cardiaco es: {}%'.format(round(scoring[0]*100,2))
-    #return 'El porcentaje de tener fallo cardiaco es: {}%'.format(scoring[0])
+
 
 
 

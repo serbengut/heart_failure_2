@@ -36,14 +36,13 @@ st.title('Heart Failure')
 
 
 ### vble 1:
-age = st.number_input(label='Edad:',step=1.,format="%.0f")
-#age = int(age)
+#age = st.number_input(label='Edad:',step=1.,format="%.0f")
 
 ### vble 2:
-#chest_pain_type = st.selectbox('Chest Pain Type', ['ATA', 'NAP', 'ASY','TA'])
+chest_pain_type = st.selectbox('Chest Pain Type', ['ATA', 'NAP', 'ASY','TA'])
 
 ### vble 3:
-#cholesterol = st.slider('Cholesterol level', 70, 800)
+cholesterol = st.slider('Cholesterol level', 70, 800)
 
 ### vble 4:
 exercise_angina = st.selectbox('Exercise Angina', ['Y', 'N'])
@@ -52,7 +51,7 @@ exercise_angina = st.selectbox('Exercise Angina', ['Y', 'N'])
 #fasting_bs = st.selectbox('Fasting blood sugar [1: if FastingBS > 120 mg/dl, 0: otherwise]', [1, 0])
 
 ### vble 6:
-#max_hr = st.slider('Max heart rate', 80, 300)
+max_hr = st.slider('Max heart rate', 80, 300)
 
 ### vble 7:
 oldpeak = st.number_input(label='OldPeak', min_value=-2.0, max_value=6.0,step=0.1,format="%.2f")
@@ -65,15 +64,18 @@ oldpeak = st.number_input(label='OldPeak', min_value=-2.0, max_value=6.0,step=0.
 #resting_ecg = st.selectbox('Resting ECG', ['Normal', 'ST','LVH'])
 
 ### vble 10:
-#sex = st.selectbox('Sex', ['M', 'F'])
+sex = st.selectbox('Sex', ['M', 'F'])
 
 ### vble 11:
 st_slope = st.selectbox('Slope of the peak exercise:', ['Up', 'Flat','Down']) 
 
 
-registro = pd.DataFrame({'age':age,                                              
+registro = pd.DataFrame({'chest_pain_type':chest_pain_type,                                              
+                         'cholesterol':cholesterol,
                          'exercise_angina':exercise_angina,
+                         'max_hr':max_hr,
                          'oldpeak':oldpeak,
+                         'sex':sex,
                          'st_slope':st_slope
                          }
                         ,index=[0])
