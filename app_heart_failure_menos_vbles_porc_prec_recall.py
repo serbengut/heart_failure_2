@@ -131,6 +131,8 @@ def calcular_metricas(real, scoring, umbral):
 pred, val_y_final = carga_x_y()
 
 precision, recall = calcular_metricas(val_y_final, pred, umbral_usu)
+precision
+recall
 
 fallo = ejecutar_modelo(registro)
 
