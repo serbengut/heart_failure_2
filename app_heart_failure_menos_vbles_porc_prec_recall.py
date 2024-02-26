@@ -134,8 +134,8 @@ precision, recall = calcular_metricas(val_y_final, pred, umbral_usu)
 fallo = ejecutar_modelo(registro)
 
 ##### boton calcular prob fallo cardiaco: ##########################
-with st.sidebar:
-    st.image('heart.jpg')
+#with st.sidebar:
+    #st.image('heart.jpg')
 ####################################################################
 
 column1,column2,column3,column4 = st.columns([1,2.3,1.5,1.5])
