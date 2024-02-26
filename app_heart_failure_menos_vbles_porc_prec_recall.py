@@ -90,7 +90,8 @@ with colu1:
     registro
 
 with colu2:
-    umbral_usu = st.number_input(label='Definir el Umbral (entre 0 y 1)', min_value=0.01, max_value=0.99,step=0.01,format="%.2f")
+    #umbral_usu = st.number_input(label='Definir el Umbral (entre 0 y 1)', min_value=0.01, max_value=0.99,step=0.01,format="%.2f")
+    umbral_usu = 0.12
 st.divider()
 
 ########################################################################################
